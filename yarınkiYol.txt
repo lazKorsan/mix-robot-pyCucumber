@@ -1,0 +1,38 @@
+Robot Framework - Page Object Model (POM) Yol Haritası
+
+1. Veri Katmanı (Data)
+   Dosya: properties/test_data.py
+   - Değişkenleri Python değişkeni olarak tanımla.
+   - Örnek:
+     pv_lessons_url = "https://..."
+     pv_lessons_userName = "user1"
+
+2. Sayfa Katmanı (Page/Resource)
+   Dosya: pages/py.resource
+   - Ayarlar (Settings) kısmında kütüphaneleri ve verileri içeri al.
+     Library    SeleniumLibrary
+     Variables  ../properties/test_data.py
+
+   - Değişkenleri kullanırken direkt isimlerini kullan (Dosya adı yazmana gerek yok!):
+     ${pv_lessons_url}
+
+   - Keyword'leri tanımla ve gerekirse dışarıdan veri alması için [Arguments] kullan.
+     Open Private Lessons
+         [Arguments]    ${url}    ${browser}
+         Open Browser   ${url}    ${browser}
+
+3. Test Katmanı (Test)
+   Dosya: Tests/PY005.robot
+   - Resource dosyasını ve (gerekirse tekrar) veri dosyasını import et.
+     Resource   ../pages/py.resource
+     Variables  ../properties/test_data.py
+
+   - Test Case içinde Keyword'leri çağır.
+     Open Private Lessons    ${pv_lessons_url}    chrome
+
+*Önemli İpuçları:*
+- Python dosyasından (.py) gelen değişkenleri Robot dosyasında kullanırken başına dosya adı yazmana gerek yok. Direkt ${degisken_adi} olarak kullan.
+- Dosya yollarında `../` bir üst klasöre çıkmak demektir.
+- Şifreleri içeren dosyaları .gitignore'a eklemeyi unutma.
+
+Yarınki çalışmanda başarılar! Sen yaparsın.
