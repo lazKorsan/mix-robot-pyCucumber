@@ -18,7 +18,7 @@ ${usernameBox_Xpath}       (//input[@class="form-control border-start-0 rounded-
 ${passwordBox_Xpath}       (//input[@class="form-control border-start-0 rounded-end-3"])[2]
 ${submitButton_Xpath}      //button[@class="btn btn-login w-100"]
 
-# test_data.py dosyasından gelen değişkenleri burada tekrar isimlendiriyoruz
+# test_data.py dosyasından gelen değişkenleri burada tekrar isimlendiriyoruz todo
 ${py_url}      ${pv_lessons_url}
 ${userName}    ${pv_lessons_userName}
 ${password}    ${pv_lessons_password}
