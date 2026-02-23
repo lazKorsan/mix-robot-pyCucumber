@@ -1,5 +1,5 @@
-# demowbshopPage.resource
-# C:\Users\user\PycharmProjects\robot_beta_UI\pages\demowbshopPage.resource
+# py.resource
+# C:\Users\user\PycharmProjects\exantring\pages\py.resource
 
 *** Settings ***
 Library         SeleniumLibrary

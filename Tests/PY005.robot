@@ -1,5 +1,5 @@
-# US003LoginWithMethod.robot
-# C:\Users\user\PycharmProjects\robot_beta_UI\Tests\US003LoginWithMethod.robot
+# PY005.robot
+# C:\Users\user\PycharmProjects\exantring\Tests\PY005.robot
 
 *** Settings ***
 Documentation    US003 - Test case for successful login functionality.
