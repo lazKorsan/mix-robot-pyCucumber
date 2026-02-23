@@ -4,3 +4,4 @@ log.html
 __pycache__
 venv
 .idea
+properties/test_data.py
