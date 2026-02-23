@@ -1,3 +1,9 @@
+# PY001LoginTest.robot
+# C:\Users\user\PycharmProjects\exantring\Tests\PY001LoginTest.robot
+# C:\Users\user\PycharmProjects\exantring\properties\test_data.py
+# C:\Users\user\PycharmProjects\exantring\pages\py.resource
+# C:\Users\user\PycharmProjects\exantring\pages\prvateLessonsPage.py
+
 *** Settings ***
 Library    SeleniumLibrary
 Resource   ../utils/sendkey_utils.py

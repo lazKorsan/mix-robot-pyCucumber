@@ -1,5 +1,5 @@
-# PY005.robot
-# C:\Users\user\PycharmProjects\exantring\Tests\PY005.robot
+# PY005LoginWithMethod.robot
+# C:\Users\user\PycharmProjects\exantring\Tests\PY005LoginWithMethod.robot
 
 *** Settings ***
 Documentation    US003 - Test case for successful login functionality.
@@ -9,7 +9,7 @@ Variables       ../properties/test_data.py
 Resource        ../pages/py.resource
 
 *** Variables ***
-# test_data.py dosyasından gelen değişkenleri burada tekrar isimlendiriyoruz
+# test_data.py dosyasından gelen değişkenleri burada tekrar isimlendiriyoruz todo
 ${py_url}      ${pv_lessons_url}
 ${userName}    ${pv_lessons_userName}
 ${password}    ${pv_lessons_password}
